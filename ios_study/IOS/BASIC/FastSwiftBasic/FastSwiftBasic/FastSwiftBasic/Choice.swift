@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Choice: View {
     
-    var direction: Direction = .east
+    var direction: Direction_ = .east
     var member: Member = .leeo
     var menu: Menu = .steak("미디움")
     
@@ -34,7 +34,7 @@ enum Menu {
     case pasta
     case steak(String) //case에 연관된 값을 넣을 수 있다.(String)(int)
 }
-enum Direction: String {
+enum Direction_: String {
     case north = "북"
     case west = "서"
     case east = "동"
