@@ -17,6 +17,8 @@
 		52D33E8B2B3FFCC1002B69D2 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D33E8A2B3FFCC1002B69D2 /* Diff.swift */; };
 		52D33E8D2B419992002B69D2 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D33E8C2B419992002B69D2 /* Choice.swift */; };
 		52D33E8F2B419C92002B69D2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D33E8E2B419C92002B69D2 /* Selection.swift */; };
+		52E95CE02B428C18009B6F15 /* Nil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95CDF2B428C18009B6F15 /* Nil.swift */; };
+		52E95CE22B42904F009B6F15 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95CE12B42904F009B6F15 /* Option.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		52D33E8A2B3FFCC1002B69D2 /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 		52D33E8C2B419992002B69D2 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		52D33E8E2B419C92002B69D2 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		52E95CDF2B428C18009B6F15 /* Nil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nil.swift; sourceTree = "<group>"; };
+		52E95CE12B42904F009B6F15 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				52D33E8A2B3FFCC1002B69D2 /* Diff.swift */,
 				52D33E8C2B419992002B69D2 /* Choice.swift */,
 				52D33E8E2B419C92002B69D2 /* Selection.swift */,
+				52E95CDF2B428C18009B6F15 /* Nil.swift */,
+				52E95CE12B42904F009B6F15 /* Option.swift */,
 			);
 			path = FastSwiftBasic;
 			sourceTree = "<group>";
@@ -157,11 +163,13 @@
 			files = (
 				52D33E8F2B419C92002B69D2 /* Selection.swift in Sources */,
 				52D33E8B2B3FFCC1002B69D2 /* Diff.swift in Sources */,
+				52E95CE22B42904F009B6F15 /* Option.swift in Sources */,
 				52D33E892B3FF78F002B69D2 /* Elevator.swift in Sources */,
 				52D33E8D2B419992002B69D2 /* Choice.swift in Sources */,
 				52D33E792B3FD1D4002B69D2 /* ContentView.swift in Sources */,
 				52D33E772B3FD1D4002B69D2 /* FastSwiftBasicApp.swift in Sources */,
 				52D33E852B3FD95D002B69D2 /* VarType.swift in Sources */,
+				52E95CE02B428C18009B6F15 /* Nil.swift in Sources */,
 				52D33E872B3FDBD3002B69D2 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
