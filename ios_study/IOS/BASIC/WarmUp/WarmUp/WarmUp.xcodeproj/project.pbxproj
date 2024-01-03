@@ -13,6 +13,7 @@
 		52E95CFF2B456F73009B6F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E95CFE2B456F73009B6F15 /* Preview Assets.xcassets */; };
 		52E95D062B457B95009B6F15 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95D052B457B95009B6F15 /* Layout.swift */; };
 		52E95D082B457D69009B6F15 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95D072B457D69009B6F15 /* MyButton.swift */; };
+		52E95D0B2B45814C009B6F15 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95D0A2B45814C009B6F15 /* Onboarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		52E95CFE2B456F73009B6F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52E95D052B457B95009B6F15 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		52E95D072B457D69009B6F15 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		52E95D0A2B45814C009B6F15 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				52E95D052B457B95009B6F15 /* Layout.swift */,
 				52E95D072B457D69009B6F15 /* MyButton.swift */,
 				52E95CF72B456F72009B6F15 /* WarmUpApp.swift */,
+				52E95D0A2B45814C009B6F15 /* Onboarding.swift */,
 			);
 			path = 01;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				52E95CFA2B456F72009B6F15 /* ContentView.swift in Sources */,
 				52E95CF82B456F72009B6F15 /* WarmUpApp.swift in Sources */,
+				52E95D0B2B45814C009B6F15 /* Onboarding.swift in Sources */,
 				52E95D062B457B95009B6F15 /* Layout.swift in Sources */,
 				52E95D082B457D69009B6F15 /* MyButton.swift in Sources */,
 			);
