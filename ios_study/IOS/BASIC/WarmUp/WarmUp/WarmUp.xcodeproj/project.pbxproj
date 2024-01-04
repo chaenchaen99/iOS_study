@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525063832B46D93F00346644 /* ListLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525063822B46D93F00346644 /* ListLoop.swift */; };
 		52E95CF82B456F72009B6F15 /* WarmUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95CF72B456F72009B6F15 /* WarmUpApp.swift */; };
 		52E95CFA2B456F72009B6F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95CF92B456F72009B6F15 /* ContentView.swift */; };
 		52E95CFC2B456F73009B6F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E95CFB2B456F73009B6F15 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		525063822B46D93F00346644 /* ListLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoop.swift; sourceTree = "<group>"; };
 		52E95CF42B456F72009B6F15 /* WarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E95CF72B456F72009B6F15 /* WarmUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpApp.swift; sourceTree = "<group>"; };
 		52E95CF92B456F72009B6F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525063812B46D92F00346644 /* 02 */ = {
+			isa = PBXGroup;
+			children = (
+				525063822B46D93F00346644 /* ListLoop.swift */,
+			);
+			path = 02;
+			sourceTree = "<group>";
+		};
 		52E95CEB2B456F72009B6F15 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		52E95CF62B456F72009B6F15 /* WarmUp */ = {
 			isa = PBXGroup;
 			children = (
+				525063812B46D92F00346644 /* 02 */,
 				52E95D092B457E87009B6F15 /* 01 */,
 				52E95CF92B456F72009B6F15 /* ContentView.swift */,
 				52E95CFB2B456F73009B6F15 /* Assets.xcassets */,
@@ -157,6 +168,7 @@
 				52E95CFA2B456F72009B6F15 /* ContentView.swift in Sources */,
 				52E95CF82B456F72009B6F15 /* WarmUpApp.swift in Sources */,
 				52E95D0B2B45814C009B6F15 /* Onboarding.swift in Sources */,
+				525063832B46D93F00346644 /* ListLoop.swift in Sources */,
 				52E95D062B457B95009B6F15 /* Layout.swift in Sources */,
 				52E95D082B457D69009B6F15 /* MyButton.swift in Sources */,
 			);
