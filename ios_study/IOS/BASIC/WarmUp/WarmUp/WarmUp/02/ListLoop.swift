@@ -15,7 +15,7 @@ struct Fruit: Hashable {
 
 struct ListLoop: View {//리스트
     
-    var favoriteFruits = [ //모델링 한 데이터
+   @State var favoriteFruits = [ //모델링 한 데이터
         Fruit(name: "Apple",
               matchFruitName: "Banana",
               price: 1000),
@@ -42,8 +42,24 @@ struct ListLoop: View {//리스트
     var price = ["1000", "3000", "4000", "2400", "8000"]
     var count = 0
     
+    @State var fruitName: String = ""
     var body: some View {
         NavigationStack {
+            
+            HStack {
+                TextField("insert fruit name", text: $fruitName)
+                Button {
+                    favoriteFruits.append(Fruit(name: fruitName, matchFruitName: "Apple", price: 1000))
+                } label: {
+                    Text("insert")
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.blue)
+                        .cornerRadius(10)
+                }
+            }
+            .padding()
+            
             List {
                 ForEach(favoriteFruits, id: \.self){ fruit in
                     VStack(alignment: .leading) {
@@ -51,7 +67,9 @@ struct ListLoop: View {//리스트
                         Text("matchFruitName: \(fruit.matchFruitName)")
                         Text("price: \(fruit.price)")
                     }
-                }
+                }.onDelete(perform: { indexSet in //Swipe 지우기
+                    favoriteFruits.remove(atOffsets: indexSet)
+                })
             }.navigationTitle("Fruit List")
         }
     }
