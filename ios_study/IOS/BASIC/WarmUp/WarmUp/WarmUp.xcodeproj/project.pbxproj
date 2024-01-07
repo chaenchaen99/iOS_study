@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520ED90D2B4A9C0F002A0BFD /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520ED90C2B4A9C0F002A0BFD /* Modal.swift */; };
+		520ED90F2B4A9CD4002A0BFD /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520ED90E2B4A9CD4002A0BFD /* Detail.swift */; };
 		525063832B46D93F00346644 /* ListLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525063822B46D93F00346644 /* ListLoop.swift */; };
 		525063852B496A7200346644 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525063842B496A7200346644 /* Setting.swift */; };
 		52E95CF82B456F72009B6F15 /* WarmUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95CF72B456F72009B6F15 /* WarmUpApp.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520ED90C2B4A9C0F002A0BFD /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		520ED90E2B4A9CD4002A0BFD /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		525063822B46D93F00346644 /* ListLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLoop.swift; sourceTree = "<group>"; };
 		525063842B496A7200346644 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		52E95CF42B456F72009B6F15 /* WarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520ED90B2B4A9C08002A0BFD /* 03 */ = {
+			isa = PBXGroup;
+			children = (
+				520ED90C2B4A9C0F002A0BFD /* Modal.swift */,
+				520ED90E2B4A9CD4002A0BFD /* Detail.swift */,
+			);
+			path = 03;
+			sourceTree = "<group>";
+		};
 		525063812B46D92F00346644 /* 02 */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 		52E95CF62B456F72009B6F15 /* WarmUp */ = {
 			isa = PBXGroup;
 			children = (
+				520ED90B2B4A9C08002A0BFD /* 03 */,
 				525063812B46D92F00346644 /* 02 */,
 				52E95D092B457E87009B6F15 /* 01 */,
 				52E95CF92B456F72009B6F15 /* ContentView.swift */,
@@ -170,7 +184,9 @@
 			files = (
 				52E95CFA2B456F72009B6F15 /* ContentView.swift in Sources */,
 				52E95CF82B456F72009B6F15 /* WarmUpApp.swift in Sources */,
+				520ED90F2B4A9CD4002A0BFD /* Detail.swift in Sources */,
 				52E95D0B2B45814C009B6F15 /* Onboarding.swift in Sources */,
+				520ED90D2B4A9C0F002A0BFD /* Modal.swift in Sources */,
 				525063832B46D93F00346644 /* ListLoop.swift in Sources */,
 				525063852B496A7200346644 /* Setting.swift in Sources */,
 				52E95D062B457B95009B6F15 /* Layout.swift in Sources */,
