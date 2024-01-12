@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MyTableViewController: UIViewController {
 
     @IBOutlet var myTableView: UITableView!
@@ -16,9 +17,6 @@ class MyTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .brown
-        myTableView.backgroundColor = .green
-        myTableView.delegate = self
-        myTableView.dataSource = self
     }
 }
 
@@ -34,6 +32,4 @@ extension MyTableViewController:
         cell.textLabel?.text = cellData[indexPath.row]
         return cell
     }
-    
-    
 }
