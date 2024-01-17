@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fdo-Kl-ADZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VL0-Bk-0Fz">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -368,9 +369,85 @@
             </objects>
             <point key="canvasLocation" x="4651" y="667"/>
         </scene>
+        <!--eraser-->
+        <scene sceneID="9h6-oH-1Bj">
+            <objects>
+                <viewController id="7q0-hE-eWU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cI3-S3-eqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xRk-Y7-hNe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="eraser" selectedImage="eraser" catalog="system" id="Sco-mw-qYo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIV-rP-PMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7170" y="-784"/>
+        </scene>
+        <!--share-->
+        <scene sceneID="QeV-hW-BvF">
+            <objects>
+                <viewController id="LqH-sa-OvM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8D9-dZ-9n7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zi7-BX-skZ"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="share" selectedImage="square.and.arrow.up.on.square.fill" catalog="system" id="YlO-S7-9uu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCY-uv-jnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7170" y="3"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vFV-In-LxD">
+            <objects>
+                <viewController id="zxU-fe-QPz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOt-1Y-1dE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8Gq-Ou-deq"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="square.and.pencil.circle.fill" catalog="system" id="9BF-Wl-VfE">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnJ-jB-K2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7007" y="774"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Uqh-kd-yDM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VL0-Bk-0Fz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a1A-ci-i6h">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="selectedImageTintColor" name="AccentColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LqH-sa-OvM" kind="relationship" relationship="viewControllers" id="CNu-ab-qmC"/>
+                        <segue destination="zxU-fe-QPz" kind="relationship" relationship="viewControllers" id="v4U-i9-9Kd"/>
+                        <segue destination="7q0-hE-eWU" kind="relationship" relationship="viewControllers" id="B6z-wC-DJW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjA-h0-Yfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6244.9275362318849" y="2.4456521739130435"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="eraser" catalog="system" width="128" height="119"/>
         <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square.and.arrow.up.on.square.fill" catalog="system" width="119" height="128"/>
+        <image name="square.and.pencil.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
