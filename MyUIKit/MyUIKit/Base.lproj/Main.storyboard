@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sy-i8-ifZ">
-                                <rect key="frame" x="164" y="88" width="86" height="21"/>
+                                <rect key="frame" x="153.66666666666666" y="88" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r3-q3-0Lt">
-                                <rect key="frame" x="159" y="189" width="96" height="35"/>
+                                <rect key="frame" x="159" y="189" width="75" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Blz-iW-1Qw"/>
                                 </constraints>
@@ -259,6 +259,9 @@
                                 <rect key="frame" x="0.0" y="177" width="414" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="1aR-gY-G0I" kind="show" id="Ixi-5W-1FG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EmE-EN-DNk"/>
@@ -288,7 +291,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="1aR-gY-G0I" kind="show" id="Cgu-vp-xfC"/>
+                                    <segue destination="1aR-gY-G0I" kind="show" identifier="goNext" id="Cgu-vp-xfC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -425,6 +428,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VL0-Bk-0Fz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a1A-ci-i6h">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <color key="selectedImageTintColor" name="AccentColor"/>
@@ -440,6 +444,9 @@
             <point key="canvasLocation" x="6244.9275362318849" y="2.4456521739130435"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cgu-vp-xfC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="eraser" catalog="system" width="128" height="119"/>
         <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
