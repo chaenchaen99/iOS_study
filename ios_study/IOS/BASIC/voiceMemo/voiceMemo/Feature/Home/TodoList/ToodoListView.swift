@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct TodoListView: View {
+    @EnvironmentObject private pathModel: PathModel
+    
   var body: some View {
     Text("Todo List")
   }
