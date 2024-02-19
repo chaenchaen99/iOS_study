@@ -64,6 +64,14 @@ extension MemoListViewModel
         isDisplayRemoveMemoAlert = isDisplay
     }
     
+    func memoRemoveSelectedBoxTapped(_ memo: Memo) {
+      if let index = removeMemos.firstIndex(of: memo) {
+        removeMemos.remove(at: index)
+      } else {
+        removeMemos.append(memo)
+      }
+    }
+    
     func removeBtnTapped()
     {
         memos.removeAll() { memo in
