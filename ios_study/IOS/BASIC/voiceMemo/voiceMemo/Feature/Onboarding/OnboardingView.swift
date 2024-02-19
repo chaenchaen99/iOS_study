@@ -129,7 +129,7 @@ private struct StartBtnView: View {
     fileprivate var body: some View{
         Button(
             action: {
-                pathModel.paths.append(.homeView)
+                pathModel.paths.append(.memoView)
             }, label: {
                 HStack {
                     Text("시작하기")

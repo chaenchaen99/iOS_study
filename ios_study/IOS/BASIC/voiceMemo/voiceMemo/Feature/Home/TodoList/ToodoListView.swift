@@ -129,7 +129,7 @@ private struct TodoCellView: View {
                     
                     Text(todo.convertedDayAndTime)
                         .font(.system(size: 16))
-                        .foregroundStyle(.customIconKey)
+                        .foregroundStyle(.primary)
                 }
                 Spacer()
                 
