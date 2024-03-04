@@ -26,11 +26,28 @@ struct MemoListView: View {
               }
               // 타이틀 뷰
               TitleView()
+                  .padding(.top, 20)
               // 안내 뷰 혹은 메모리스트 컨텐츠 뷰
-              
-              // 메모작성 플로팅 아이콘 버튼 뷰
+              if memoListViewModel.memos.isEmpty {
+                  AnnouncementView()
+              } else {
+                  MemoListContentView()
+                      .padding(.top, 20)
+              }
           }
+          // 메모작성 플로팅 아이콘 버튼 뷰
+          WriteMemoBtnView()
+              .padding(.trailing, 20)
+              .padding(.bottom, 50)
       }
+      .alert(
+        "메모 \(memoListViewModel.removeMemoCount)개 삭제하시겠습니까?",
+        isPresented: $memoListViewModel.isDisplayRemoveMemoAlert){
+            Button("삭제", role: .destructive) {
+                memoListViewModel.removeBtnTapped()
+            }
+            Button("취소", role: .cancel) {}
+        }
   }
 }
 
@@ -117,7 +134,9 @@ private struct MemoCellView: View {
     
     fileprivate var body: some View {
         Button (
-            action: {},
+            action: {
+                //TODO: path 관련 로직 작성 필요
+            },
             label: {
                 VStack(spacing: 10) {
                     HStack {
@@ -152,6 +171,26 @@ private struct MemoCellView: View {
                 }
             }
         )
+    }
+}
+//MARK: 메모 작성 버튼 뷰
+private struct WriteMemoBtnView: View {
+    @EnvironmentObject private var pathModel: PathModel
+    
+    fileprivate var body: some View {
+        VStack{
+            Spacer()
+            
+            HStack{
+                Spacer()
+                
+                Button(action: {
+                    //TODO: - 메모 뷰 구현 후 돌아와서 구현 필요
+                }, label: {
+                    Image("writeBtn")
+                })
+            }
+        }
     }
 }
 
