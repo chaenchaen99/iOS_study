@@ -29,15 +29,27 @@ struct MemoView: View {
                 rightBtnType: isCreateMode ? .create : .complete
               )
               
-              //메모 타이틀 인풋 뷰
+              //메모 타이틀 인풋 뷰'
+              MemoTitleInputView(
+                memoViewModel: memoViewModel,
+                isCreateMode: $isCreateMode
+              )
+              .padding(.top, 20)
               
               //메모 컨텐츠 인풋 뷰
-              
+              MemoContentInputView(memoViewModel: memoViewModel)
+                  .padding(.top, 10)
               //삭제 플로팅 버튼 뷰
+          }
+          if !isCreateMode {
+              RemoveMemoBtnView(memoViewModel: memoViewModel)
+                  .padding(.trailing, 20)
+                  .padding(.bottom, 10)
           }
       }
   }
 }
+
 //MARK: - 메모 제목 입력 뷰
 private struct MemoTitleInputView: View {
     @ObservedObject private var memoViewModel: MemoViewModel
@@ -89,6 +101,37 @@ private struct MemoContentInputView: View {
             }
         }
         .padding(.horizontal, 20)
+    }
+}
+//MARK: 메모 삭제 버튼 뷰
+private struct RemoveMemoBtnView: View {
+    @EnvironmentObject private var pathModel: PathModel
+    @EnvironmentObject private var memoListVIewModel: MemoListViewModel
+    @ObservedObject private var memoViewModel: MemoViewModel
+    
+    fileprivate init(memoViewModel: MemoViewModel)
+    {
+        self.memoViewModel = memoViewModel
+    }
+    
+    fileprivate var body: some View {
+        VStack {
+            Spacer()
+            
+            HStack{
+                Spacer()
+                
+                Button(
+                    action: {
+                        memoListVIewModel.removeMemo(memoViewModel.memo)
+                        pathModel.paths.removeLast()
+                    }, label: {
+                        Image("trash")
+                            .resizable()
+                            .frame(width: 40,height: 40)
+                    })
+            }
+        }
     }
 }
 struct MemoView_Previews: PreviewProvider {
