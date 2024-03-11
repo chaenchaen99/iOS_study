@@ -21,7 +21,13 @@ class LoginViewController: UIViewController {
     }
 
 
-    @IBAction func buttonDidTap(_ sender: Any) {
+    @IBAction func loginButtonDidTap(_ sender: Any) {
+        //현재 루트 뷰 컨트롤러를 새로운 컨트롤러로 교체
+        self.view.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "tabbar");
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        .portrait
     }
 }
 
