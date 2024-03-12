@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526D7A122BA07809006F7311 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D7A112BA07809006F7311 /* HomeSection.swift */; };
 		52EBA2232B9F202A00D1B875 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA2222B9F202A00D1B875 /* HomeViewController.swift */; };
 		52EBA22D2B9F220C00D1B875 /* HomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBA22B2B9F220C00D1B875 /* HomeVideoCell.swift */; };
 		52EBA22E2B9F220C00D1B875 /* HomeVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EBA22C2B9F220C00D1B875 /* HomeVideoCell.xib */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526D7A112BA07809006F7311 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		52EBA2222B9F202A00D1B875 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52EBA22B2B9F220C00D1B875 /* HomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVideoCell.swift; sourceTree = "<group>"; };
 		52EBA22C2B9F220C00D1B875 /* HomeVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVideoCell.xib; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				52EBA2242B9F217E00D1B875 /* Cell */,
 				52EBA2222B9F202A00D1B875 /* HomeViewController.swift */,
+				526D7A112BA07809006F7311 /* HomeSection.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */,
 				95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */,
+				526D7A122BA07809006F7311 /* HomeSection.swift in Sources */,
 				95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */,
 				52EBA22D2B9F220C00D1B875 /* HomeVideoCell.swift in Sources */,
 				52EBA2232B9F202A00D1B875 /* HomeViewController.swift in Sources */,
